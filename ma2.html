@@ -1,0 +1,38 @@
+<html>
+    <script>
+        function tarea()
+        {
+            document.getElementById("Result1").innerHTML=0.5*document.getElementById("text1").value*document.getElementById("text2").value;
+        }
+        function rarea()
+        {
+            document.getElementById("Result2").innerHTML=document.getElementById("text3").value*document.getElementById("text4").value;
+        }
+        function carea()
+        {
+            document.getElementById("Result3").innerHTML=3.14*document.getElementById("text5").value*document.getElementById("text5").value;
+        }
+    </script>
+    <body style="background-color: pink;">
+        <center>
+        <h1>CALCULATE THE AREA OF THE TRIANGLE</h1>
+        <h2>Enter Height:<input type="text" id="text1"></h2>
+        <h2>Enter Breadth:<input type="text" id="text2"></h2>
+        <button type="button" onclick="tarea()">AREA</button>
+        <h2>AREA OF THE TRIANGLE : </h2>
+        <div id="Result1"></div>
+        <h1>CALCULATE THE AREA OF THE RECTANGLE</h1>
+        <h2>Enter Length:<input type="text" id="text3"></h2>
+        <h2>Enter Breadth:<input type="text" id="text4"></h2>
+        <button type="button" onclick="rarea()">AREA</button>
+        <h2>AREA OF THE RECTANGLE : </h2>
+        <div id="Result2"></div>
+        <h1>CALCULATE THE AREA OF THE CIRCLE</h1>
+        <h2>Enter Radius:<input type="text" id="text5"></h2>
+        <button type="button" onclick="carea()">AREA</button>
+        <h2>AREA OF THE CIRCLE : </h2>
+        <div id="Result3"></div>
+        </center>
+    </body>
+
+</html>
